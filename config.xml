@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>blocklastvisit</name>
+	<displayName><![CDATA[Last Visit Products Block]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Adds a block displaying your stores last visiting products.]]></description>
+	<author><![CDATA[Batuhan KUCUKALI]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
