@@ -14,13 +14,13 @@ class BlockLastVisit extends Module
 
 	public function __construct()
 	{
-		$this->name = 'blocklastvisit';
-		$this->tab = 'front_office_features';
-		$this->version = '1.0.0';
-		$this->author = 'Batuhan KUCUKALI';
-		$this->need_instance = 0;
-		$this->bootstrap = true;
-		$this->cookie_name = 'ps_cookie_products';
+		$this->name 			= 'blocklastvisit';
+		$this->tab 				= 'front_office_features';
+		$this->version 			= '1.0.0';
+		$this->author 		 	= 'PRESTATR';
+		$this->need_instance	= 0;
+		$this->bootstrap 		= true;
+		$this->cookie_name 		= 'ps_cookie_products';
 
 		parent::__construct();
 
@@ -28,7 +28,7 @@ class BlockLastVisit extends Module
 		$this->description = $this->l('Adds a block displaying your store\'s last visiting products.');
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
 
-		$this->cookiem = new BlockLastVisitCookie(new Cookie($this->cookie_name));
+		$this->cookiem = new BlockLastVisitCookie(new Cookie($this->cookie_name), (int)Configuration::get('PS_BLOCK_BESTSELLERS_TO_DISPLAY'));
 
 	}
 
@@ -289,7 +289,6 @@ class BlockLastVisit extends Module
 				BlockLastVisit::$cache_last_visits = $this->getLastVisits($params);
 			$this->smarty->assign(array(
 				'last_visits' => BlockLastVisit::$cache_last_visits,
-				'display_link_bestsellers' => Configuration::get('PS_DISPLAY_BEST_SELLERS'),
 				'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
 				'smallSize' => Image::getSize(ImageType::getFormatedName('small'))
 			));

@@ -38,4 +38,4 @@
         {/if}
     </div>
 </div>
-<!-- /MODULE Block best sellers -->
+<!-- /MODULE Block Last Visit -->

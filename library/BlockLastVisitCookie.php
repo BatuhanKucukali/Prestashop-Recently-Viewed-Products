@@ -5,12 +5,13 @@
 
   	public $cookie_name = 'ps_cookie_products';
 
-  	public $max_limit = 10;
+  	public $max_limit;
 
   	public $cookie;
 
-  	public function __construct(Cookie $cookie)
+  	public function __construct(Cookie $cookie, $limit)
   	{
+		$this->max_limit = $limit;
   		$this->cookie = $cookie;
   	}
 
