@@ -1,4 +1,4 @@
-# Last Visit Block
+# Recently Viewed Products
 
 Installation
 
