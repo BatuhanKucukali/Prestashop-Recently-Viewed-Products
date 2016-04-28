@@ -1,1 +1,1 @@
-<li><a data-toggle="tab" href="#blocklastvisit" class="blocklastvisit">{l s='Last Visit' mod='blocklastvisit'}</a></li>
+<li><a data-toggle="tab" href="#blocklastvisit" class="blocklastvisit">{l s='Recently Viewed Products' mod='blocklastvisit'}</a></li>

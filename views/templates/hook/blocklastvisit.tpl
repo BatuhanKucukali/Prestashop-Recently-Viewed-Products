@@ -1,8 +1,8 @@
 <!-- MODULE Block Last Visit -->
 <div id="last-visits_block_right" class="block products_block">
     <h4 class="title_block">
-        <a href="{$link->getPageLink('last-visits')|escape:'html'}" title="{l s='View a last visiting products' mod='blocklastvisit'}">
-            {l s='Last Visit' mod='blocklastvisit'}
+        <a href="{$link->getPageLink('last-visits')|escape:'html'}" title="{l s='Recently Viewed Products' mod='blocklastvisit'}">
+            {l s='Recently Viewed Products' mod='blocklastvisit'}
         </a>
     </h4>
 
@@ -34,7 +34,7 @@
             </ul>
 
         {else}
-            <p>{l s='No last visiting at this time' mod='blocklastvisit'}</p>
+            <p>{l s='There is no viewed products.' mod='blocklastvisit'}</p>
         {/if}
     </div>
 </div>

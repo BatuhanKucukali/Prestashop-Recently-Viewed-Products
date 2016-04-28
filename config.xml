@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <module>
 	<name>blocklastvisit</name>
-	<displayName><![CDATA[Last Visit Products Block]]></displayName>
+	<displayName><![CDATA[Recently Viewed Products]]></displayName>
 	<version><![CDATA[1.0.0]]></version>
-	<description><![CDATA[Adds a block displaying your store&#039;s last visiting products.]]></description>
+	<description><![CDATA[It adds a block on your stores that shows recently viewed products.]]></description>
 	<author><![CDATA[PRESTATR]]></author>
 	<tab><![CDATA[front_office_features]]></tab>
 	<is_configurable>1</is_configurable>

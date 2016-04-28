@@ -24,8 +24,8 @@ class BlockLastVisit extends Module
 
 		parent::__construct();
 
-		$this->displayName = $this->l('Last Visit Products Block');
-		$this->description = $this->l('Adds a block displaying your store\'s last visiting products.');
+		$this->displayName = $this->l('Recently Viewed Products');
+		$this->description = $this->l('It adds a block on your stores that shows recently viewed products.');
 		$this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
 
 		$this->cookiem = new BlockLastVisitCookie(new Cookie($this->cookie_name), (int)Configuration::get('PS_BLOCK_BESTSELLERS_TO_DISPLAY'));
@@ -48,7 +48,6 @@ class BlockLastVisit extends Module
 			|| !$this->registerHook('deleteproduct')
 			|| !$this->registerHook('displayHomeTab')
 			|| !$this->registerHook('displayHomeTabContent')
-			|| !ProductSale::fillProductSales()
 		)
 			return false;
 
